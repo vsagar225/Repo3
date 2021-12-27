@@ -15,9 +15,7 @@ public class TestNgTest1 {
 
   @AfterTest
   public void afterTest() {
-	  //Sample Changes
-	  //From Github
-	  //New Changes
+	 // Changes for afterTest
   }
 
 }
