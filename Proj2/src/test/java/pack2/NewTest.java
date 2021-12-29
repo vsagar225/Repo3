@@ -49,9 +49,12 @@ logger.log(LogStatus.PASS, "Test Case (failTest) Status is passed");
 }
 @Test
 public void skipTest(){
+	System.out.println("new comment -2");
 logger = extent.startTest("skipTest");
 throw new SkipException("Skipping - This is not ready for testing ");
- System.out.println("new comment");
+ 
+ 
+ 
 }
 @AfterMethod
 public void getResult(ITestResult result){
