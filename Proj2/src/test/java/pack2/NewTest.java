@@ -33,8 +33,8 @@ extent
 @Test
 public void passTest(){
 //extent.startTest("TestCaseName", "Description")
-//TestCaseName – Name of the test
-//Description – Description of the test
+//TestCaseName â€“ Name of the test
+//Description â€“ Description of the test
 //Starting test
 logger = extent.startTest("passTest");
 Assert.assertTrue(true);
@@ -51,6 +51,7 @@ logger.log(LogStatus.PASS, "Test Case (failTest) Status is passed");
 public void skipTest(){
 logger = extent.startTest("skipTest");
 throw new SkipException("Skipping - This is not ready for testing ");
+ System.out.println("new comment");
 }
 @AfterMethod
 public void getResult(ITestResult result){
